@@ -21,7 +21,7 @@
 			    <basic/>
 			    <serverIdentity>
 			        <username>ymohammed</username>
-			        <password>pro098!</password>
+			        <password></password>
 			    </serverIdentity>
 			</authentication> 
 			<!-- Following properties used by adapter's key manager for choosing specific certificate from key store  
