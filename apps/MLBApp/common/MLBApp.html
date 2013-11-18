@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MLBApp</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<link rel="shortcut icon" href="images/loadPage.jpg">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-startup-image" href="filename.png" />
+<link rel="stylesheet" href="css/custom-swatches.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.3.1.css">
+<link rel="stylesheet" href="css/EbayjQuery.css">
+<link rel="stylesheet" href="css/jquery.mobile.theme-1.3.1.css">
+<link type="text/css"
+	href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css"
+	rel="stylesheet" />
+<link type="text/css"
+	href="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.css"
+	rel="stylesheet" />
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+<script type="text/javascript">
+	dojoConfig = {
+		parseOnLoad : true,
+		isDebug : false,
+		async : true,
+		packages : [ {
+			"name" : "prolifics",
+			"location" : "../js/prolifics"
+		} ]
+	};
+</script>
+
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript"
+	src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
+<script type="text/javascript"
+	src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
+<script type="text/javascript"
+	src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.flipbox.min.js"></script>
+<script type="text/javascript"
+	src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+</head>
+<body id="content" style="display: none;">
+	<!-- Home Page -->
+	<div data-role="page" id="home" data-add-back-btn="true">
+		<div data-role="header">
+			<div align="center">
+				<img src="images/mlblogo.png">
+			</div>
+		</div>
+
+		<div data-role="content" style="padding: 15px">
+
+			<div data-role="controlgroup" data-type="horizontal" align="center">
+				<a href="#home" data-role="button"
+					class="ui-btn-active ui-state-persist">Monthly</a> <a href="#"
+					data-role="button">Weekly</a> <a href="index.html"
+					data-role="button">Daily</a>
+
+			</div>
+
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<a href="#" data-role="button" data-icon="arrow-l" data-theme="b"
+						data-iconpos="notext"></a>
+				</div>
+				<div class="ui-block-b" align="center">
+					<a href="#" data-role="button" data-theme="b">November</a>
+				</div>
+				<div class="ui-block-c" align="right">
+					<a href="#" data-role="button" data-theme="b" data-icon="arrow-r"
+						data-iconpos="notext"></a>
+				</div>
+			</div>
+
+
+			<div id="calendarDiv" class="ui-grid-d" style="text-align: center;">
+				<!-- First week -->
+				<div class="ui-block-a ui-bar-d" style="height: 60px">Mon</div>
+				<div class="ui-block-b ui-bar-d" style="height: 60px">Tue</div>
+				<div class="ui-block-c ui-bar-d" style="height: 60px">Wed</div>
+				<div class="ui-block-d ui-bar-d" style="height: 60px">Thu</div>
+				<div class="ui-block-e ui-bar-d" style="height: 60px">Fri</div>
+
+
+				<!-- Second week-->
+				<div id="1" class="ui-block-a ui-bar-c" style="height: 60px">1</div>
+				<div id="2" class="ui-block-b ui-bar-c" style="height: 60px">2</div>
+				<div id="3" class="ui-block-c ui-bar-c" style="height: 60px">3</div>
+				<div id="4" class="ui-block-d ui-bar-c" style="height: 60px">4</div>
+				<div id="5" class="ui-block-e ui-bar-c" style="height: 60px">5</div>
+
+				<!-- Third week -->
+				<div id="6" class="ui-block-a ui-bar-c" style="height: 60px">
+					<a href="#notePopup" data-rel="popup" data-transition="pop"
+						data-position-to="window">6</a>
+				</div>
+				<div id="7" class="ui-block-b ui-bar-c" style="height: 60px">7</div>
+				<div id="8" class="ui-block-c ui-bar-c" style="height: 60px">8</div>
+				<div id="9" class="ui-block-d ui-bar-c" style="height: 60px">9</div>
+				<div id="10" class="ui-block-e ui-bar-c" style="height: 60px">10</div>
+				<!-- Fourth week -->
+				<div id="11" class="ui-block-a ui-bar-c" style="height: 60px">11</div>
+				<div id="12" class="ui-block-b ui-bar-c" style="height: 60px">12</div>
+				<div id="13" class="ui-block-c ui-bar-c" style="height: 60px">13</div>
+				<div id="14" class="ui-block-d ui-bar-c" style="height: 60px">14</div>
+				<div id="15" class="ui-block-e ui-bar-c" style="height: 60px">15</div>
+
+				<!-- Fifth week -->
+				<div id="16" class="ui-block-a ui-bar-c" style="height: 60px">16</div>
+				<div id="17" class="ui-block-b ui-bar-c" style="height: 60px">17</div>
+				<div id="18" class="ui-block-c ui-bar-c" style="height: 60px">18</div>
+				<div id="19" class="ui-block-d ui-bar-c" style="height: 60px">19</div>
+				<div id="20" class="ui-block-e ui-bar-c" style="height: 60px">20</div>
+
+				<!-- Sixth week -->
+				<div id="21" class="ui-block-a ui-bar-c" style="height: 60px">21</div>
+				<div id="22" class="ui-block-b ui-bar-c" style="height: 60px">22</div>
+				<div id="23" class="ui-block-c ui-bar-c" style="height: 60px">23</div>
+				<div id="24" class="ui-block-d ui-bar-c" style="height: 60px">
+					<a href="html/note.html" data-rel="dialog" data-transition="pop">24</a>
+				</div>
+				<div id="25" class="ui-block-e ui-bar-c" style="height: 60px">25</div>
+			</div>
+
+			<select name="select-choice-0" id="select-choice-0">
+				<option value="rush">All</option>
+				<option value="rush">Project Status</option>
+				<option value="express">Pending</option>
+			</select>
+
+
+			<!-- Note Popup -->
+			<div data-role="popup" id="notePopup" data-overlay-theme="a"
+				style="max-width: 400px;" class="ui-corner-all ui-content">
+				<a href="#" data-rel="back" data-role="button" data-theme="a"
+					data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<div data-role="header" data-theme="a" class="ui-corner-top">
+					<h1>Project X</h1>
+				</div>
+				<div data-role="content" data-theme="d"
+					class="ui-corner-bottom ui-content" style="padding: 15px">
+					<h3>Deadline</h3>
+					<p>Oct 2nd 2013</p>
+					<h3>Designers Assinged</h3>
+
+					<ol data-role="listview" data-inset="true">
+						<li>Alice</li>
+						<li>Bob</li>
+						<li>Brad</li>
+						<li>Cathy</li>
+						<li>Ferrari</li>
+					</ol>
+					<a href="#home" data-role="button" data-inline="true"
+						data-rel="back" data-theme="c">Done</a> <a href="#"
+						data-role="button" data-inline="true" data-rel="back"
+						data-transition="flow" data-theme="b">Delete</a>
+				</div>
+			</div>
+			<!-- Dynamic Popup -->
+			<div data-role="popup" id="dynPopup" data-overlay-theme="a"
+				style="max-width: 400px;" class="ui-corner-all ui-content">
+				<a href="#" data-rel="back" data-role="button" data-theme="a"
+					data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+				<div id="headerPop" data-role="header" data-theme="a"
+					class="ui-corner-top">
+					<h1></h1>
+				</div>
+				<div id="popContent" data-role="content" data-theme="d"
+					class="ui-corner-bottom ui-content" style="padding: 15px">
+
+					<a href="#home" data-role="button" data-inline="true"
+						data-rel="back" data-theme="c">Done</a> <a href="#"
+						data-role="button" data-inline="true" data-rel="back"
+						data-transition="flow" data-theme="b">Delete</a>
+				</div>
+			</div>
+		</div>
+
+		<!--Footer Navbar -->
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="grid" class="ui-btn-active">Calendar</a></li>
+					<li><a href="html/completed.html" data-icon="check">Project
+							Status</a></li>
+					<li><a href="#pending" data-icon="info">Incoming Requests</a></li>
+				</ul>
+			</div>
+			<!-- /navbar -->
+		</div>
+	</div>
+	<div data-role="page" id="pending" data-add-back-btn="true">
+		<div data-role="header">
+			<h3>Incoming Requests</h3>
+			<a href="#" data-role="button" data-icon="refresh"
+				data-iconpos="notext" class="ui-btn-right">Refresh</a>
+		</div>
+
+		<div data-role="content" style="padding: 15px">
+
+			<ul data-role="listview" data-filter="true" id="incomingRequests">
+			</ul>
+
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="grid">Calendar</a></li>
+					<li><a href="html/completed.html" data-icon="check">Project
+							Status</a></li>
+					<li><a href="#" data-icon="info" class="ui-btn-active">Incoming
+							Requests</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!-- End of Home Page -->
+
+	<!-- Pending page Page -->
+	
+
+
+	<script src="js/initOptions.js"></script>
+	<script src="js/MLBApp.js"></script>
+	<script src="js/messages.js"></script>
+
+</body>
+</html>

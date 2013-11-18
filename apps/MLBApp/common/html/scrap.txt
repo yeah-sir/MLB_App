@@ -1,0 +1,23 @@
+<!--   <fieldset data-role="controlgroup" id="designerCheckbox"> -->
+				<!-- 	<legend>Choose desginers:</legend>  -->
+				<!-- 	 <input type="checkbox"
+						name="checkbox-3a" id="checkbox-3a" class="custom" /> <label
+						for="checkbox-3a">Calvin</label> <input type="checkbox"
+						name="checkbox-4a" id="checkbox-4a" class="custom" /> <label
+						for="checkbox-4a">Dom</label>
+						<input type="checkbox"
+						name="checkbox-5a" id="checkbox-5a" class="custom" /> <label
+						for="checkbox-5a">Derek</label>
+						<input type="checkbox"
+						name="checkbox-6a" id="checkbox-6a" class="custom" /> <label
+						for="checkbox-6a">Elija</label>
+						<input type="checkbox"
+						name="checkbox-7a" id="checkbox-7a" class="custom" /> <label
+						for="checkbox-7a">Frank</label>
+						<input type="checkbox"
+						name="checkbox-8a" id="checkbox-8a" class="custom" /> <label
+						for="checkbox-8a">Joe</label>
+				</fieldset> -->
+				
+				
+FRM DESIGNER ACCEPT PAGE

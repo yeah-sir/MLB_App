@@ -1,0 +1,28 @@
+<div data-role="page" id="accept" data-add-back-btn="true">
+	<div data-role="header">
+		<h3>Accept Page</h3>
+	</div>
+
+	<div data-role="content">
+		<a href="designerPage.html" data-role="button">View Designer
+			Schedule</a>
+
+		<form action="" method="post">
+			<div data-role="fieldcontain"  class="designerCheckbox">
+				
+			</div>
+
+
+				<label for="mydate">Assign Deadline</label> <input name="mydate"
+					id="mydate" type="date" data-role="datebox" data-theme="c"
+					data-options='{"mode": "flipbox"}'>
+					
+				<label for="notes">Notes:</label>
+				<textarea id="notes" name="notes"></textarea>
+
+		</form>
+
+		<a href="#pending" data-role="button" data-theme="b" onClick="updateActivity(notes.value, mydate.value)">Assign</a>
+
+	</div>
+</div>
